@@ -20,11 +20,11 @@ Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl CGI::XMLForm
 Summary(zh_CN):	CGI::XMLForm Perl Ä£¿é
 Name:		perl-CGI-XMLForm
 Version:	0.10
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-XML-Parser >= 2.20
 BuildArch:	noarch
@@ -41,7 +41,8 @@ dokumentów w formacie XML.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -58,13 +59,13 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README TODO
-%{perl_sitelib}/CGI/XMLForm.pm
-%{perl_sitelib}/CGI/XMLForm
-%dir %{perl_sitelib}/auto/CGI
-%dir %{perl_sitelib}/auto/CGI/XMLForm
-%dir %{perl_sitelib}/auto/CGI/XMLForm/Path
-%{perl_sitelib}/auto/CGI/XMLForm/Path/autosplit.ix
-%{perl_sitelib}/auto/CGI/XMLForm/Path/*.al
+%{perl_vendorlib}/CGI/XMLForm.pm
+%{perl_vendorlib}/CGI/XMLForm
+%dir %{perl_vendorlib}/auto/CGI
+%dir %{perl_vendorlib}/auto/CGI/XMLForm
+%dir %{perl_vendorlib}/auto/CGI/XMLForm/Path
+%{perl_vendorlib}/auto/CGI/XMLForm/Path/autosplit.ix
+%{perl_vendorlib}/auto/CGI/XMLForm/Path/*.al
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
