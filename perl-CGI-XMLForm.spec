@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	CGI
 %define		pnam	XMLForm
-Summary:	CGI-XMLForm perl module
-Summary(pl):	Modu³ perla CGI-XMLForm
+Summary:	CGI::XMLForm perl module
+Summary(pl):	Modu³ perla CGI::XMLForm
 Name:		perl-CGI-XMLForm
 Version:	0.10
 Release:	6
@@ -16,10 +16,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-CGI-XMLForm - Extension of CGI.pm which reads/generates formated XML.
+CGI::XMLForm - Extension of CGI.pm which reads/generates formated XML.
 
 %description -l pl
-CGI-XMLForm - rozszerzenie CGI.pm umo¿liwiaj±ce czytanie/generowanie
+CGI::XMLForm - rozszerzenie CGI.pm umo¿liwiaj±ce czytanie/generowanie
 dokumentów w formacie XML.
 
 %prep
