@@ -10,7 +10,7 @@ Summary(fr):	Module Perl CGI::XMLForm
 Summary(it):	Modulo di Perl CGI::XMLForm
 Summary(ja):	CGI::XMLForm Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	CGI::XMLForm ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul CGI::XMLForm
+Summary(nb):	Perlmodul CGI::XMLForm
 Summary(pl):	Modu³ Perla CGI::XMLForm
 Summary(pt):	Módulo de Perl CGI::XMLForm
 Summary(pt_BR):	Módulo Perl CGI::XMLForm
