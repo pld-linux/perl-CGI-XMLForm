@@ -13,7 +13,7 @@ BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-XML-Parser >= 2.20
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 CGI-XMLForm - Extension of CGI.pm which reads/generates formated XML.
