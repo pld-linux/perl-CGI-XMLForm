@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	CGI
-%define		pnam	XMLForm
+%define	pdir	CGI
+%define	pnam	XMLForm
 Summary:	CGI::XMLForm Perl module
 Summary(cs):	Modul CGI::XMLForm pro Perl
 Summary(da):	Perlmodul CGI::XMLForm
