@@ -1,11 +1,26 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	CGI
 %define		pnam	XMLForm
-Summary:	CGI::XMLForm perl module
-Summary(pl):	Modu³ perla CGI::XMLForm
+Summary:	CGI::XMLForm Perl module
+Summary(cs):	Modul CGI::XMLForm pro Perl
+Summary(da):	Perlmodul CGI::XMLForm
+Summary(de):	CGI::XMLForm Perl Modul
+Summary(es):	Módulo de Perl CGI::XMLForm
+Summary(fr):	Module Perl CGI::XMLForm
+Summary(it):	Modulo di Perl CGI::XMLForm
+Summary(ja):	CGI::XMLForm Perl ¥â¥¸¥å¡¼¥ë
+Summary(ko):	CGI::XMLForm ÆÞ ¸ðÁÙ
+Summary(no):	Perlmodul CGI::XMLForm
+Summary(pl):	Modu³ Perla CGI::XMLForm
+Summary(pt):	Módulo de Perl CGI::XMLForm
+Summary(pt_BR):	Módulo Perl CGI::XMLForm
+Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl CGI::XMLForm
+Summary(sv):	CGI::XMLForm Perlmodul
+Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl CGI::XMLForm
+Summary(zh_CN):	CGI::XMLForm Perl Ä£¿é
 Name:		perl-CGI-XMLForm
 Version:	0.10
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -31,17 +46,26 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf Changes README TODO
+install example* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz *.html example.pl
+%doc Changes README TODO
 %{perl_sitelib}/CGI/XMLForm.pm
 %{perl_sitelib}/CGI/XMLForm
+%dir %{perl_sitelib}/auto/CGI
+%dir %{perl_sitelib}/auto/CGI/XMLForm
+%dir %{perl_sitelib}/auto/CGI/XMLForm/Path
+%{perl_sitelib}/auto/CGI/XMLForm/Path/autosplit.ix
+%{perl_sitelib}/auto/CGI/XMLForm/Path/*.al
 %{_mandir}/man3/*
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
+%{_examplesdir}/%{name}-%{version}/*.html
