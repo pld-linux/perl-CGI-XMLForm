@@ -1,12 +1,11 @@
-%define	pdir	CGI
-%define	pnam	XMLForm
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	CGI
+%define		pnam	XMLForm
 Summary:	CGI-XMLForm perl module
 Summary(pl):	Modu³ perla CGI-XMLForm
 Name:		perl-CGI-XMLForm
 Version:	0.10
 Release:	6
-
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ CGI-XMLForm - rozszerzenie CGI.pm umo¿liwiaj±ce czytanie/generowanie
 dokumentów w formacie XML.
 
 %prep
-%setup -q -n CGI-XMLForm-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
