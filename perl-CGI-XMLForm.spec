@@ -6,22 +6,22 @@
 %define		pdir	CGI
 %define		pnam	XMLForm
 Summary:	CGI::XMLForm Perl module
-Summary(cs):	Modul CGI::XMLForm pro Perl
-Summary(da):	Perlmodul CGI::XMLForm
-Summary(de):	CGI::XMLForm Perl Modul
-Summary(es):	MÛdulo de Perl CGI::XMLForm
-Summary(fr):	Module Perl CGI::XMLForm
-Summary(it):	Modulo di Perl CGI::XMLForm
-Summary(ja):	CGI::XMLForm Perl •‚•∏•Â°º•Î
-Summary(ko):	CGI::XMLForm ∆ﬁ ∏¡Ÿ
-Summary(nb):	Perlmodul CGI::XMLForm
-Summary(pl):	Modu≥ Perla CGI::XMLForm
-Summary(pt):	MÛdulo de Perl CGI::XMLForm
-Summary(pt_BR):	MÛdulo Perl CGI::XMLForm
-Summary(ru):	Ìœƒ’Ãÿ ƒÃ— Perl CGI::XMLForm
-Summary(sv):	CGI::XMLForm Perlmodul
-Summary(uk):	Ìœƒ’Ãÿ ƒÃ— Perl CGI::XMLForm
-Summary(zh_CN):	CGI::XMLForm Perl ƒ£øÈ
+Summary(cs.UTF-8):   Modul CGI::XMLForm pro Perl
+Summary(da.UTF-8):   Perlmodul CGI::XMLForm
+Summary(de.UTF-8):   CGI::XMLForm Perl Modul
+Summary(es.UTF-8):   M√≥dulo de Perl CGI::XMLForm
+Summary(fr.UTF-8):   Module Perl CGI::XMLForm
+Summary(it.UTF-8):   Modulo di Perl CGI::XMLForm
+Summary(ja.UTF-8):   CGI::XMLForm Perl „É¢„Ç∏„É•„Éº„É´
+Summary(ko.UTF-8):   CGI::XMLForm ÌéÑ Î™®Ï§Ñ
+Summary(nb.UTF-8):   Perlmodul CGI::XMLForm
+Summary(pl.UTF-8):   Modu≈Ç Perla CGI::XMLForm
+Summary(pt.UTF-8):   M√≥dulo de Perl CGI::XMLForm
+Summary(pt_BR.UTF-8):   M√≥dulo Perl CGI::XMLForm
+Summary(ru.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl CGI::XMLForm
+Summary(sv.UTF-8):   CGI::XMLForm Perlmodul
+Summary(uk.UTF-8):   –ú–æ–¥—É–ª—å –¥–ª—è Perl CGI::XMLForm
+Summary(zh_CN.UTF-8):   CGI::XMLForm Perl Ê®°Âùó
 Name:		perl-CGI-XMLForm
 Version:	0.10
 Release:	9
@@ -38,9 +38,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 CGI::XMLForm - Extension of CGI.pm which reads/generates formated XML.
 
-%description -l pl
-CGI::XMLForm - rozszerzenie CGI.pm umoøliwiaj±ce czytanie/generowanie
-dokumentÛw w formacie XML.
+%description -l pl.UTF-8
+CGI::XMLForm - rozszerzenie CGI.pm umo≈ºliwiajƒÖce czytanie/generowanie
+dokument√≥w w formacie XML.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
