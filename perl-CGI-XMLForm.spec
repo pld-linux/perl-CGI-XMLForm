@@ -6,22 +6,22 @@
 %define		pdir	CGI
 %define		pnam	XMLForm
 Summary:	CGI::XMLForm Perl module
-Summary(cs.UTF-8):   Modul CGI::XMLForm pro Perl
-Summary(da.UTF-8):   Perlmodul CGI::XMLForm
-Summary(de.UTF-8):   CGI::XMLForm Perl Modul
-Summary(es.UTF-8):   Módulo de Perl CGI::XMLForm
-Summary(fr.UTF-8):   Module Perl CGI::XMLForm
-Summary(it.UTF-8):   Modulo di Perl CGI::XMLForm
-Summary(ja.UTF-8):   CGI::XMLForm Perl モジュール
-Summary(ko.UTF-8):   CGI::XMLForm 펄 모줄
-Summary(nb.UTF-8):   Perlmodul CGI::XMLForm
-Summary(pl.UTF-8):   Moduł Perla CGI::XMLForm
-Summary(pt.UTF-8):   Módulo de Perl CGI::XMLForm
-Summary(pt_BR.UTF-8):   Módulo Perl CGI::XMLForm
-Summary(ru.UTF-8):   Модуль для Perl CGI::XMLForm
-Summary(sv.UTF-8):   CGI::XMLForm Perlmodul
-Summary(uk.UTF-8):   Модуль для Perl CGI::XMLForm
-Summary(zh_CN.UTF-8):   CGI::XMLForm Perl 模块
+Summary(cs.UTF-8):	Modul CGI::XMLForm pro Perl
+Summary(da.UTF-8):	Perlmodul CGI::XMLForm
+Summary(de.UTF-8):	CGI::XMLForm Perl Modul
+Summary(es.UTF-8):	Módulo de Perl CGI::XMLForm
+Summary(fr.UTF-8):	Module Perl CGI::XMLForm
+Summary(it.UTF-8):	Modulo di Perl CGI::XMLForm
+Summary(ja.UTF-8):	CGI::XMLForm Perl モジュール
+Summary(ko.UTF-8):	CGI::XMLForm 펄 모줄
+Summary(nb.UTF-8):	Perlmodul CGI::XMLForm
+Summary(pl.UTF-8):	Moduł Perla CGI::XMLForm
+Summary(pt.UTF-8):	Módulo de Perl CGI::XMLForm
+Summary(pt_BR.UTF-8):	Módulo Perl CGI::XMLForm
+Summary(ru.UTF-8):	Модуль для Perl CGI::XMLForm
+Summary(sv.UTF-8):	CGI::XMLForm Perlmodul
+Summary(uk.UTF-8):	Модуль для Perl CGI::XMLForm
+Summary(zh_CN.UTF-8):	CGI::XMLForm Perl 模块
 Name:		perl-CGI-XMLForm
 Version:	0.10
 Release:	9
