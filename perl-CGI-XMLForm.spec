@@ -24,7 +24,7 @@ Summary(uk.UTF-8):	Модуль для Perl CGI::XMLForm
 Summary(zh_CN.UTF-8):	CGI::XMLForm Perl 模块
 Name:		perl-CGI-XMLForm
 Version:	0.10
-Release:	9
+Release:	10
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
