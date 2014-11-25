@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	CGI
 %define		pnam	XMLForm
+%include	/usr/lib/rpm/macros.perl
 Summary:	CGI::XMLForm Perl module
 Summary(cs.UTF-8):	Modul CGI::XMLForm pro Perl
 Summary(da.UTF-8):	Perlmodul CGI::XMLForm
@@ -29,9 +29,10 @@ License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	89d5fcc3f0a3753aa184e9ae85474736
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/CGI-XMLForm/
 BuildRequires:	perl-XML-Parser >= 2.20
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -58,7 +59,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install example* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p example* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
