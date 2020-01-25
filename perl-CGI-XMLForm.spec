@@ -4,7 +4,6 @@
 
 %define		pdir	CGI
 %define		pnam	XMLForm
-%include	/usr/lib/rpm/macros.perl
 Summary:	CGI::XMLForm Perl module
 Summary(cs.UTF-8):	Modul CGI::XMLForm pro Perl
 Summary(da.UTF-8):	Perlmodul CGI::XMLForm
